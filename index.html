@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aerial 360</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="homepage">
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="logo-tagline">
+                <img class="header-logo" src="img/icons/logo-AERIAL-15.png" alt="Aerial logo">
+                <h1>Fotografía y video <span class="semibold">aéreo</span> con cámaras y <br> <span class="semibold">drones</span> de última tecnología.</h1>
+            </div>
+        </div>
+    </div> <!-- .jumbotron -->
+
+    <nav class="navbar navbar-inverse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Aerial</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="drones.html">Drones</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div> <!-- .navbar-collapse -->
+    </nav> <!-- .navbar -->
+
+    <div class="row drone-images">
+        <div class="container">
+            <div class="col-md-3 homepage-drone-img">
+                <img src="img/phantom-2.png" alt=""></img>
+                <p>Phantom 2</p>
+            </div>
+            
+             <div class="col-md-3 homepage-drone-img">
+                <img src="img/inspire-1.png" alt=""></img>
+                <p>Inspire 1</p>
+            </div>
+            
+             <div class="col-md-3 homepage-drone-img">
+                <img src="img/osmo.png" alt=""></img>
+                <p>Osmo</p>
+            </div>
+            
+             <div class="col-md-3 homepage-drone-img">
+                <img src="img/hexacoptero-6.png" alt=""></img>
+                <p>Hexacoptero</p>
+            </div>
+
+        </div> <!-- .container -->
+    </div> <!-- .row -->
+    
+
+    <div class="row mas">
+        <div class="container">
+            <button type="button" class="btn btn-default btn-lg">Conocer más</button>
+        </div>
+    </div>
+
+
+    <div class="row capture">
+        <h1>Te ayudamos a capturar las <span class="semibold">mejores tomas</span> a <br> través de nuestros ángulos inigualables.</h1>
+    </div>
+
+    <div class="row services">
+        <div class="col-md-4 servicios">
+                <div>
+                    <h2>Servicios</h2>
+                    <img class="servicios-icon" src="img/icons/Homepage-AERIAL-06.png" alt="">
+                </div>
+        </div> <!-- .servicios -->
+        <div class="col-md-8 servicios-details">
+            <div class="row">
+                <div class="col-xs-2"><img class="servicios-details-icon" src="img/icons/Homepage-AERIAL-03.png" alt=""></div>
+                <div class="col-xs-10">
+                  <p>Fotografía y<br>video aéreo</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-2"><img class="servicios-details-icon" src="img/icons/Homepage-AERIAL-04.png" alt=""></div>
+                <div class="col-xs-10">
+                  <p>Edición</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-2"><img class="servicios-details-icon" src="img/icons/Homepage-AERIAL-05.png" alt=""></div>
+                <div class="col-xs-10">
+                  <p>Producción</p>
+                </div>
+            </div>
+        </div> <!-- .servicios-details -->
+    </div> <!-- .row -->
+    
+    <div class="row homepage-gallery">
+        <div class="col-md-4 row1-img1"></div>
+        <div class="col-md-4 row1-img2"></div>
+        <div class="col-md-4 row1-img3"></div>
+    </div>
+    
+    <div class="row homepage-gallery">
+        <div class="col-md-6 row2-img1"></div>
+        <div class="col-md-6 row2-img2"></div>
+    </div>
+    
+    <div class="row homepage-gallery">
+        <div class="col-md-4 row3-img1"></div>
+        <div class="col-md-4 row3-img2"></div>
+        <div class="col-md-4 row3-img3"></div>
+    </div>
+    
+    <footer>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="nombre"></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo-electronico"></label>
+                            <input type="email" class="form-control" id="correo-electronico" placeholder="Correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje"></label>
+                            <textarea class="form-control" rows="5" id="mensaje" placeholder="Mensaje"></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-default">Enviar</button>
+    
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <img class="footer-logo" src="img/icons/logo-AERIAL-16.png" alt=""></img>
+                </div></div>
+                <div class="col-md-4">Social Media</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--Fixed Menu on Scroll-->
+    <script>
+        $(document).ready(function() {
+            $(window).bind('scroll', function() {
+                var navHeight = $(window).height() - 70;
+                if ($(window).scrollTop() > navHeight) {
+                    $('nav').addClass('fixed');
+                }
+                else {
+                    $('nav').removeClass('fixed');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

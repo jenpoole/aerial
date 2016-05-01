@@ -1,0 +1,369 @@
+/**********************
+* Fonts
+**********************/
+
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myriadProBold;
+    src: url(../fonts/MyriadPro-Bold 2.otf);
+}
+
+@font-face {
+    font-family: myriadProLight;
+    src: url(../fonts/MyriadPro-Light.otf);
+}
+
+@font-face {
+    font-family: myriadProRegular;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: myriadProSemiBold;
+    src: url(../fonts/MyriadPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: myriadProSemiBoldItalic;
+    src: url(../fonts/MyriadPro-SemiboldIt-2.otf);
+}
+
+#homepage h1 {
+    font-family: myriadProLight;
+    font-size: 3.5em;
+}
+
+#homepage h1 .semibold {
+    font-family: myriadProSemiBold;
+}
+
+#drones h3 {
+    font-family: myriadProLight;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#drones p {
+    font-family: myriadProLight;
+    font-size: 1.5em;
+}
+
+#drones p strong {
+    font-family: myriadProSemiBoldItalic;
+}
+
+#portafolio h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: myriadProSemiBold;
+    color: #555655;
+}
+
+/**********************
+* Menu
+**********************/
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-inverse .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-inverse {
+    border-radius: 0;
+    background-color: #1c1e20;
+}
+
+.fixed {
+	position: fixed; 
+	top: 0; 
+	/*height: 30px;*/
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #b4b4b1;
+    font-family: myriadProLight;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 35px 50px;
+}
+
+
+/**********************
+* Homepage
+**********************/
+
+.jumbotron {
+    background: url("../img/foto-ppal.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.header-logo {
+    height: 70px;
+}
+
+.drone-images {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.homepage-drone-img {
+    text-align: center;
+    padding: 20px;
+    /*position: relative;*/
+}
+
+.homepage-drone-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*margin-bottom: 15px;*/
+}
+
+.capture {
+    background: url("../img/foto-secundaria.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.mas {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.mas .btn {
+    font-family: myriadProRegular;
+    font-size: 1.1em;
+    background-color: #1c1e20;
+    color: #b4b4b1;
+}
+
+.capture {
+    position: relative;
+}
+
+.capture h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**********************
+* Homepage : Services
+**********************/
+
+.services {
+    /*padding: 50px 0;*/
+    /*height: 100vh;*/
+}
+
+.services .row {
+    padding: 40px 0 30px 200px;
+}
+
+.servicios {
+    background-color: #545554;
+    color: #1c1e20;
+}
+
+.servicios h2 {
+    font-size: 3em;
+    font-family: myriadProLight;
+}
+
+.servicios-details {
+    background-color: #1c1e20;
+    color: #545554;
+}
+
+.servicios-details p {
+    font-family: myriadProLight;
+    font-size: 1.5em;
+}
+
+/*.servicios-details img,*/
+/*.servicios-details p {*/
+/*    float: left;*/
+/*}*/
+
+/*.servicios-details img {*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.servicios {
+/* {*/
+    position: relative;
+    height: 450px;
+    text-align: center;
+}
+
+.servicios-details {
+    height: 450px;
+}
+
+.servicios div {
+/*.servicios-details div {*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*.servicios h2,*/
+/*.servicios img {*/
+/*    vertical-align: middle;*/
+/*     position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+
+.servicios-icon {
+    height: 50px;
+}
+
+.servicios-details-icon {
+    height: 70px;
+}
+
+/* images row 1 */
+.homepage-gallery .row1-img1 {
+    background: url("../img/IMG_4253.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.homepage-gallery .row1-img2 {
+    background: url("../img/IMG_3802.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.homepage-gallery .row1-img3 {
+    background: url("../img/foto-secundaria.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+/* images row 2 */
+.homepage-gallery .row2-img1 {
+    background: url("../img/IMG_4255.jpg") center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+.homepage-gallery .row2-img2{
+    background: url("../img/IMG_4256.jpg") center center no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
+/* images row 3 */
+
+.homepage-gallery .row3-img1 {
+    background: url("../img/IMG_4258.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.homepage-gallery .row3-img2 {
+    background: url("../img/IMG_4259.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.homepage-gallery .row3-img3 {
+    background: url("../img/IMG_3724.jpg") center center no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+
+/**********************
+* Drones Page
+**********************/
+.cam-icon {
+    height: 30px;
+    padding-right: 15px;
+}
+
+.drone-detail-img {
+    width: 100%;
+}
+
+.dark-section {
+    background-color: #f0f0f0;
+}
+
+.cam-detail {
+    padding-bottom: 20px;
+}
+
+.drone-detail {
+    padding-top: 40px;
+}
+
+
+/**********************
+* Portafolio Page
+**********************/
+.gallery-select {
+    text-align: center;
+    background-color: #555655;
+}
+
+.gallery-select .navbar-nav>li>a{
+    color: #fff;
+}
+.page-num {
+    text-align: center;
+}
+
+.pagination>li>a {
+    border-radius: 50% !important;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.pagination>li.active>a {
+    background-color: #555655;
+    color: #fff;
+}
+
+/**********************
+* Footer
+**********************/
+
+footer {
+    padding: 50px 0;
+}
+
+.footer-logo {
+    height: 50px;
+}
