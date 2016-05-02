@@ -126,18 +126,26 @@ body {
 .homepage-drone-img {
     text-align: center;
     padding: 20px;
-    /*position: relative;*/
+    position: relative;
+    height: 400px;
 }
 
 .homepage-drone-img img {
     width: 100%;
     height: auto;
     vertical-align: middle;
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*top: 50%;*/
-    /*transform: translate(-50%, -50%);*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     /*margin-bottom: 15px;*/
+}
+
+.homepage-drone-img p {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
 }
 
 .capture {
@@ -361,9 +369,45 @@ body {
 **********************/
 
 footer {
-    padding: 50px 0;
+    padding: 50px;
+    background-color: #1c1e20;
+    border: 1px solid #1c1e20;
+    color: #545554;
+}
+
+.footerBtn {
+    background-color: #6c7982;
+}
+
+.contact-input {
+    background-color: #545554;
 }
 
 .footer-logo {
     height: 50px;
+}
+
+.copyright-logo {
+    position: relative;
+    height: 250px;
+}
+
+.copyright-logo div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-media hr {
+    width: 50%;
+    margin-right: 0;
+}
+
+.social-media i {
+    margin-right: 20px;
 }
