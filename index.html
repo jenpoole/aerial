@@ -24,6 +24,13 @@
     </div> <!-- .jumbotron -->
 
     <nav class="navbar navbar-inverse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Aerial</a></li>
@@ -123,13 +130,14 @@
     <footer>
         <div class="row">
             <div class="col-md-4">
+                <h5>Contáctanos</h5>
                 <form class="">
                     <div class="row">
-                        <div class="form-group col-xs-6">
+                        <div class="form-group col-sm-6">
                             <label for="nombre" class=""></label>
                             <input id="nombre" class="form-control input-group contact-input" type="text" name="nombre" placeholder="Nombre" />
                         </div>
-                        <div class="form-group col-xs-6">
+                        <div class="form-group col-sm-6">
                             <label for="correo-electronico" class=""></label>
                             <input id="correo-electronico" class="form-control input-group contact-input" type="email" name="correo-electronico" placeholder="Correo electrónico" />
                         </div>
@@ -150,14 +158,19 @@
             </div> <!-- logo -->
             
             <div class="col-md-4 social-media">
-                <p><i class="fa fa-facebook-square" aria-hidden="true"></i> /aerial360</p>
-                <p><i class="fa fa-instagram" aria-hidden="true"></i> @aerial360</p>
-                <p><i class="fa fa-twitter" aria-hidden="true"></i>@aerialMX</p>
+                <div class="social-media-icons">
+                    <p><i class="fa fa-facebook-square" aria-hidden="true"></i> /aerial360</p>
+                    <p><i class="fa fa-instagram" aria-hidden="true"></i> @aerial360</p>
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i>@aerialMX</p>
+                </div>
                 
                 <hr>
                 
-                <p><i class="fa fa-mobile" aria-hidden="true"></i> Jaime Hernández</p>
-                <p>2281778800</p>
+                <div class="social-media-contact">
+                    <p><i class="fa fa-mobile" aria-hidden="true"></i> Jaime Hernández</p>
+                    <p>2281778800</p>
+                </div>
+                
             </div> <!-- social media -->
         </div> <!-- .row -->
     </footer>

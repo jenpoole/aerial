@@ -334,13 +334,23 @@ body {
 }
 
 .drone-detail {
-    padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 
 /**********************
 * Portafolio Page
 **********************/
+#portafolio .homepage-drone-img p {
+    font-size: 2em;
+    font-family: myriadProLight;
+}
+
+#portafolio .homepage-drone-img:hover {
+ background-color: #f0f0f0;   
+}
+
 .gallery-select {
     text-align: center;
     background-color: #555655;
@@ -348,7 +358,17 @@ body {
 
 .gallery-select .navbar-nav>li>a{
     color: #fff;
+    font-family: myriadProLight;
+    font-size: 1.7em;
 }
+
+.gallery-navbar .navbar-nav>.active>a, 
+.gallery-navbar .navbar-nav>.active>a:focus, 
+.gallery-navbar .navbar-nav>.active>a:hover {
+    background-color: #868686;
+    color: #fff;
+}
+
 .page-num {
     text-align: center;
 }
@@ -357,6 +377,7 @@ body {
     border-radius: 50% !important;
     background-color: #f0f0f0;
     color: #000;
+    margin-right: 10px;
 }
 
 .pagination>li.active>a {
@@ -369,22 +390,32 @@ body {
 **********************/
 
 footer {
-    padding: 50px;
+    padding: 70px;
     background-color: #1c1e20;
     border: 1px solid #1c1e20;
     color: #545554;
+    font-family: myriadProLight;
+}
+
+footer h5 {
+    font-size: 1.3em;
+    font-family: myriadProLight;
+    color: #b4b4b1;
 }
 
 .footerBtn {
     background-color: #6c7982;
+    border: none;
+    color: #b4b4b1;
 }
 
 .contact-input {
     background-color: #545554;
+    border: none;
 }
 
 .footer-logo {
-    height: 50px;
+    height: 70px;
 }
 
 .copyright-logo {
@@ -399,8 +430,21 @@ footer {
     transform: translate(-50%, -50%);
 }
 
+.copyright-logo p {
+    font-size: 1.5em;
+}
+
 .social-media {
-    text-align: right;
+    padding-top: 40px;
+}
+
+.social-media-icons {
+    padding-left: 220px;
+}
+
+.social-media-icons p,
+#drones .social-media-icons p {
+    font-size: 1em;
 }
 
 .social-media hr {
@@ -410,4 +454,14 @@ footer {
 
 .social-media i {
     margin-right: 20px;
+}
+
+.social-media-contact {
+    text-align: right;
+}
+
+.social-media-contact p,
+#drones .social-media-contact p {
+    font-size: 1.1em;
+    color: #b4b4b1;
 }
