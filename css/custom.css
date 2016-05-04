@@ -223,11 +223,6 @@ body {
 * Homepage : Services
 **********************/
 
-.services {
-    /*padding: 50px 0;*/
-    /*height: 100vh;*/
-}
-
 .services .row {
     padding: 50px 0 0px 200px;
 }
@@ -252,23 +247,14 @@ body {
     font-family: myriadProLight;
     font-size: 1.5em;
     padding-top: 15px;
+    padding-left: 20px;
 }
 
 .servicios-details p.first {
     padding-top: 0px !important;
 }
 
-/*.servicios-details img,*/
-/*.servicios-details p {*/
-/*    float: left;*/
-/*}*/
-
-/*.servicios-details img {*/
-/*    margin-right: 20px;*/
-/*}*/
-
 .servicios {
-/* {*/
     position: relative;
     height: 85vh;
     text-align: center;
@@ -279,22 +265,11 @@ body {
 }
 
 .servicios div {
-/*.servicios-details div {*/
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-/*.servicios h2,*/
-/*.servicios img {*/
-/*    vertical-align: middle;*/
-/*     position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*}*/
-
 
 .servicios-icon {
     height: 80px;
@@ -368,6 +343,11 @@ body {
     padding-right: 15px;
 }
 
+.drone-img-container {
+    position: relative;
+    height: 400px;
+}
+
 .drone-detail-img {
     width: 80%;
 }
@@ -381,7 +361,6 @@ body {
     position: absolute;
     right: 0;
 }
-
 
 .dark-section {
     background-color: #f0f0f0;
@@ -399,7 +378,6 @@ body {
 .drone-detail p {
     margin: 0;
 }
-
 
 /**********************
 * Portafolio Page
@@ -462,6 +440,7 @@ body {
     background-color: #f0f0f0;
     color: #000;
     margin-right: 10px;
+    font-weight: bold;
 }
 
 .pagination>li.active>a,
@@ -489,12 +468,6 @@ footer {
     font-family: myriadProLight;
 }
 
-footer .contact-first {
-    /*margin-left: -15px;*/
-    /*margin-top: 0;*/
-    /*padding-top: 0;*/
-}
-
 footer h5 {
     font-size: 1.3em;
     font-family: myriadProLight;
@@ -507,7 +480,7 @@ footer h5 {
     background-color: #6c7982;
     border: none;
     color: #b4b4b1;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .form-group {
@@ -566,7 +539,6 @@ textarea.form-control {
     font-size: 1em;
 }
 
-
 /* icon font size */
 i.fa {
     font-size: 1.8em;
@@ -601,3 +573,189 @@ i.fa {
 }
 
 
+/**********************
+* Media Queries
+**********************/
+
+@media screen and (max-width: 1245px) {
+    .social-media-icons {
+        padding-left: 200px;
+    }
+    .social-media-contact {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .social-media-icons {
+        padding-left: 150px;
+    }
+    .social-media-contact {
+        padding-right: 40px;
+    }
+    
+    .services .row {
+        padding-left: 130px;
+    }
+    
+    #homepage .homepage-drone-img p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .social-media-icons {
+        padding-left: 100px;
+    }
+    .services .row {
+        padding-left: 80px;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        padding: 20px 30px;
+    }
+    .gallery-select .navbar-nav>li>a {
+        margin-right: 20px;
+    }
+    #portafolio .homepage-drone-img {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    #portafolio .homepage-drone-img img,
+    #portafolio .homepage-drone-img img.img-90,
+    #portafolio .homepage-drone-img img.img-80 {
+        width: 70%;
+    }
+    #portafolio .homepage-drone-img p {
+        bottom: -15px;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .services .row {
+        padding-left: 280px;
+    }
+    .social-media-icons {
+        padding-left: 0;
+    }
+    hr {
+        margin-left: 0;
+    }
+    .social-media-contact{
+        text-align: left;
+    }
+    #homepage .homepage-drone-img p {
+        bottom: -10px;
+    }
+    #homepage .homepage-drone-img {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .drone-img-container {
+        text-align: center;
+    }
+    .drone-detail {
+        padding-top: 20px;
+    }
+    .drone-detail-img {
+        width: 75%;
+    }
+    #drones .drone-detail-img.img-right,
+    #drones .drone-detail-img.img-left {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .services .row {
+        padding-left: 200px;
+    }
+    .form-group.col-sm-6.name {
+        padding-right: 0;
+    }
+    textarea.form-control {
+        margin-top: 0;
+    }
+    #homepage .homepage-drone-img img, 
+    #homepage .homepage-drone-img img.img-80,
+    #homepage .homepage-drone-img img.img-90 {
+        width: 60%;
+    }
+    #homepage .homepage-drone-img {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #drones h3 {
+        padding: 20px 0 10px;
+    }
+    .fixed {
+        position: static;
+    }
+    #homepage nav.navbar.navbar-inverse {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .jumbotron {
+        height: 100vh;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .services .row {
+        padding-left: 160px;
+    }
+    #homepage h1 {
+        font-size: 2.7em;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .services .row {
+        padding-left: 160px;
+    }
+    .servicios-details p {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .services .row {
+        padding-left: 100px;
+    }
+    #homepage .homepage-drone-img {
+        margin: 0;
+        height: 300px;
+    }
+    #drones .drone-img-container {
+        height: 250px;
+    }
+    #portafolio .homepage-drone-img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .services .row {
+        padding-left: 30px;
+    }
+    .social-media hr {
+        width: 100%;
+    }
+    #homepage .homepage-drone-img {
+        height: 250px;
+    }
+    #homepage h1 {
+        font-size: 2em;
+    }
+    .copyright-logo {
+        margin-top: 30px;    
+    }
+    .copyright-logo p {
+        font-size: 1.2em;
+    }
+    #portafolio .homepage-drone-img {
+        height: 250px;
+    }
+}
