@@ -113,6 +113,12 @@ body {
     font-variant: small-caps;
 }
 
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    font-weight: bold;
+}
+
 #drones.navbar-inverse.navbar-nav>.active>a:active {
     font-weight: bold;
 }
@@ -399,8 +405,22 @@ body {
 * Portafolio Page
 **********************/
 #portafolio .homepage-drone-img p {
-    font-size: 2em;
+    font-size: 2.4em;
     font-family: myriadProLight;
+    color: #555655;
+}
+
+#portafolio .homepage-drone-img {
+    height: 250px;
+}
+
+#portafolio .drone-images {
+    padding-top: 0;
+}
+
+#portafolio .homepage-drone-img p {
+    bottom: -20px;
+    width: 100%;
 }
 
 #portafolio .homepage-drone-img:hover {
@@ -425,6 +445,10 @@ body {
     color: #fff;
 }
 
+.gallery-select .navbar-nav>li>a {
+    margin-right: 50px;
+}
+
 .page-num {
     text-align: center;
 }
@@ -436,10 +460,18 @@ body {
     margin-right: 10px;
 }
 
-.pagination>li.active>a {
+.pagination>li.active>a,
+.pagination>li.active>a:active,
+.pagination>li.active>a:hover,
+.pagination>li.active>a:focus,
+.pagination>li>a:hover,
+.pagination>li>a:active,
+.pagination>li>a:focus {
     background-color: #555655;
     color: #fff;
+    border: 1px solid transparent;
 }
+
 
 /**********************
 * Footer
