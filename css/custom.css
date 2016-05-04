@@ -1,3 +1,8 @@
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /**********************
 * Fonts
 **********************/
@@ -35,6 +40,7 @@ body {
 #homepage h1 {
     font-family: myriadProLight;
     font-size: 3.5em;
+    padding-top: 20px;
 }
 
 #homepage h1 .semibold {
@@ -97,6 +103,9 @@ body {
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 35px 50px;
+    letter-spacing: .1em;
+    color: #b4b4b1;
+    font-variant: small-caps;
 }
 
 
@@ -109,13 +118,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    height: 100vh;
+    height: 85vh;
     margin-bottom: 0;
     color: #fff;
 }
 
 .header-logo {
-    height: 70px;
+    height: 90px;
 }
 
 .drone-images {
@@ -148,12 +157,17 @@ body {
     transform: translate(-50%, -10%);
 }
 
+#homepage .homepage-drone-img p {
+    font-family: myriadProLight;
+    font-size: 2em;
+}
+
 .capture {
     background: url("../img/foto-secundaria.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    height: 100vh;
+    height: 75vh;
     margin-bottom: 0;
     color: #fff;
 }
@@ -175,10 +189,12 @@ body {
 }
 
 .capture h1 {
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
 }
 
 /**********************
@@ -191,7 +207,7 @@ body {
 }
 
 .services .row {
-    padding: 40px 0 30px 200px;
+    padding: 50px 0 0px 200px;
 }
 
 .servicios {
@@ -207,11 +223,17 @@ body {
 .servicios-details {
     background-color: #1c1e20;
     color: #545554;
+    padding-top: 60px;
 }
 
 .servicios-details p {
     font-family: myriadProLight;
     font-size: 1.5em;
+    padding-top: 15px;
+}
+
+.servicios-details p.first {
+    padding-top: 0px !important;
 }
 
 /*.servicios-details img,*/
@@ -226,12 +248,12 @@ body {
 .servicios {
 /* {*/
     position: relative;
-    height: 450px;
+    height: 85vh;
     text-align: center;
 }
 
 .servicios-details {
-    height: 450px;
+    height: 85vh;
 }
 
 .servicios div {
@@ -253,7 +275,7 @@ body {
 
 
 .servicios-icon {
-    height: 50px;
+    height: 80px;
 }
 
 .servicios-details-icon {
@@ -283,13 +305,13 @@ body {
 .homepage-gallery .row2-img1 {
     background: url("../img/IMG_4255.jpg") center center no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 400px;
 }
 
 .homepage-gallery .row2-img2{
     background: url("../img/IMG_4256.jpg") center center no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 400px;
 }
 
 /* images row 3 */
@@ -312,6 +334,9 @@ body {
     height: 250px;
 }
 
+.homepage-gallery div {
+    border: 3px solid #1c1e20;
+}
 
 /**********************
 * Drones Page
@@ -397,16 +422,43 @@ footer {
     font-family: myriadProLight;
 }
 
+footer .contact-first {
+    /*margin-left: -15px;*/
+    /*margin-top: 0;*/
+    /*padding-top: 0;*/
+}
+
 footer h5 {
     font-size: 1.3em;
     font-family: myriadProLight;
     color: #b4b4b1;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .footerBtn {
     background-color: #6c7982;
     border: none;
     color: #b4b4b1;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group.col-sm-6 {
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.form-group.col-sm-6.name {
+    padding-right: 5px;
+}
+
+textarea.form-control {
+    margin-top: -15px;
+    padding-right: 5px;
 }
 
 .contact-input {
@@ -447,6 +499,12 @@ footer h5 {
     font-size: 1em;
 }
 
+
+/* icon fotn size */
+i.fa {
+    font-size: 1.8em;
+}
+
 .social-media hr {
     width: 50%;
     margin-right: 0;
@@ -458,6 +516,7 @@ footer h5 {
 
 .social-media-contact {
     text-align: right;
+    padding-right: 10px;
 }
 
 .social-media-contact p,
@@ -465,3 +524,9 @@ footer h5 {
     font-size: 1.1em;
     color: #b4b4b1;
 }
+
+.social-media-contact p {
+    margin: 0;
+}
+
+
