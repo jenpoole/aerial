@@ -601,6 +601,10 @@ i.fa {
     #homepage .homepage-drone-img p {
         font-size: 1.5em;
     }
+    .gallery-select .navbar-nav>li>a {
+        margin-right: 15px;
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 1010px) {
@@ -615,9 +619,6 @@ i.fa {
     }
     .services .row {
         padding-left: 80px;
-    }
-    .gallery-select .navbar-nav>li>a {
-        margin-right: 20px;
     }
     #portafolio .homepage-drone-img {
         height: 400px;
@@ -669,6 +670,9 @@ i.fa {
     }
     .footer-logo {
         margin-top: 50px;
+    }
+    .gallery-select .navbar-nav>li>a {
+        margin-right: 0px;
     }
 }
 
