@@ -603,15 +603,18 @@ i.fa {
     }
 }
 
+@media screen and (max-width: 1010px) {
+    .navbar-inverse .navbar-nav>li>a {
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 995px) {
     .social-media-icons {
         padding-left: 100px;
     }
     .services .row {
         padding-left: 80px;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-        padding: 20px 30px;
     }
     .gallery-select .navbar-nav>li>a {
         margin-right: 20px;
@@ -664,6 +667,9 @@ i.fa {
     #drones .drone-detail-img.img-left {
         position: relative;
     }
+    .footer-logo {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 765px) {
@@ -700,6 +706,9 @@ i.fa {
         height: 100vh;
         margin-top: 50px;
     }
+    .servicios-details {
+        padding-top: 40px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -713,7 +722,7 @@ i.fa {
 
 @media screen and (max-width: 620px) {
     .services .row {
-        padding-left: 160px;
+        padding-left: 130px;
     }
     .servicios-details p {
         padding-left: 50px;
@@ -722,7 +731,10 @@ i.fa {
 
 @media screen and (max-width: 470px) {
     .services .row {
-        padding-left: 100px;
+        padding-left: 70px;
+    }
+    .servicios-details {
+        padding-top: 20px;
     }
     #homepage .homepage-drone-img {
         margin: 0;
@@ -748,9 +760,6 @@ i.fa {
     }
     #homepage h1 {
         font-size: 2em;
-    }
-    .copyright-logo {
-        margin-top: 30px;    
     }
     .copyright-logo p {
         font-size: 1.2em;
